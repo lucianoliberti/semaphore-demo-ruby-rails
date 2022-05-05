@@ -62,6 +62,7 @@ blocks:
             - "[[ -f junit.xml ]] && test-results publish --name \"\U0001F9EA Unit tests\" junit.xml"
   - name: Integration tests
     dependencies:
+      - 'Block #5'
       - Unit tests
     task:
       prologue:
@@ -84,7 +85,7 @@ blocks:
             - "[[ -f junit.xml ]] && test-results publish --name \"\U0001F3D7️ Integration tests\" junit.xml"
   - name: 'Block #5'
     dependencies:
-      - Unit tests
+      - Code scanning
     task:
       jobs:
         - name: 'Job #1'
