@@ -86,7 +86,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - artifact pull workflow chrome-ss1.png
+            - artifact pull project chrome-ss1.png
             - ls -l
 after_pipeline:
   task:
