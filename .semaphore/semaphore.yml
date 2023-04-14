@@ -20,6 +20,10 @@ blocks:
             - cache restore
             - bundle install
             - cache store
+      agent:
+        machine:
+          type: e1-standard-8
+          os_image: ubuntu2004
   - name: Code scanning
     dependencies:
       - Setup
